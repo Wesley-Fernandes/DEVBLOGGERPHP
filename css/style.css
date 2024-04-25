@@ -1,0 +1,213 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+}
+html {
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  margin-bottom: 250px;
+}
+
+/*-------------------------- HOME */
+#title-container {
+  min-width: 500px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#title-container h1 {
+  font-size: 50px;
+}
+
+#title-container p {
+  margin-top: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+#posts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-box:first-child {
+  min-width: 100%;
+}
+.post-box:nth-child(3) {
+  margin: 0 1%;
+}
+.post-box {
+  flex: 1 1 0;
+  margin-bottom: 20px;
+}
+.post-box img {
+  width: 100%;
+}
+.post-description {
+  margin-bottom: 10px;
+}
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.post-box h2 {
+  color: #6058ac;
+}
+.post-box h2 a {
+  color: #6058ac;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.post-box h2 a:hover {
+  color: #9290db;
+}
+.tag {
+  background-color: #161616;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+}
+.post-description {
+  color: #667;
+}
+.tag:hover {
+  background-color: #313131;
+}
+/*-------------------------- POST */
+#post-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "main sidebar";
+  grid-template-columns: 75% 25%;
+  gap: 10px;
+  padding-top: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 250px;
+}
+
+
+.content-container {
+  grid-area: main;
+}
+#main-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+#post-description {
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.post-content {
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+.img-container {
+  margin-bottom: 30px;
+}
+.img-container img {
+  width: 60%;
+}
+/*-------------------------- POST ASIDE*/
+
+.nav-container{
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+}
+.nav-aside-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav-aside-title{
+  font-size: 24px;
+  margin-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.nav-aside-title:nth-child(3){
+  margin-top: 20px;
+}
+
+.aside-link{
+  color: #667;
+  transition: 0.5s;
+}
+.aside-link:hover{
+  color: #9290db;
+}
+/*-------------------------- NAVBAR */
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 9.5%;
+}
+
+#logo img {
+  width: 50px;
+  height: 50px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161616;
+  padding: 20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+#navbar li {
+  margin: 0 10px;
+  padding: 5px;
+}
+
+#navbar .nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 14px;
+}
+
+#navbar .nav-link:hover {
+  color: #999;
+}
+
+/*-------------------------- FOOTER */
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #161616;
+  color: #fff;
+  padding: 50px 0;
+}
